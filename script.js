@@ -52,10 +52,11 @@ btnConfirmacao.addEventListener('click', () =>{
         showCancelButton: true,
         confirmButtonText: 'Confirmar',
         cancelButtonText: 'Cancelar'
-    }).then((result) =>{
-        if(result.isConfirmed){
+    // Obtendo valor do clique
+    }).then((result) =>{ //Quando o clique acontecer, obter resultado
+        if(result.isConfirmed){ // Caso seja True (CONFIRMADO)
             Swal.fire('Confirmado!','Você confirmou a ação','success')
-        }
+        } //Caso seja False (CANCELADO)
         else if(result.dismiss === Swal.DismissReason.cancel){
             Swal.fire('Cancelado','A ação foi cancelado','error')
         }
@@ -70,7 +71,7 @@ btnInput.addEventListener('click', () =>{
         inputLabel: 'Digite seu nome completo!',
         inputAttributes: {maxLength: "15"},
         icon: 'question'
-    }).then((result) =>{
+    }).then((result) =>{ // Caso o valor seja True e tenha um texto
         if(result.isConfirmed && result.value){
             Swal.fire(`Olá, ${result.value}`, 'Seu nome foi recebido', 'success')
         }
@@ -84,8 +85,10 @@ btnTimer.addEventListener('click', ()=>{
         text: 'Ele está acabando',
         icon: 'warning',
         timer: 1000,
+        // Exibindo a barra de progresso
         timerProgressBar: true,
         didOpen(){
+            // Efeito de carregamento
             Swal.showLoading()
         }
     })
@@ -95,6 +98,7 @@ const btnHTML = document.getElementById('alertHTML');
 btnHTML.addEventListener('click', () =>{
     Swal.fire({
         title: 'HTML Básico',
+        // Marcacao html no efeito
         html: `
         <h1> Cachorros Frios </h1>
         <p>Oi gente, eu adoro <strong>Cachorros Frios</strong></p>
