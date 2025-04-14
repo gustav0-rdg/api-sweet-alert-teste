@@ -10,7 +10,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <!--  -->
+    <!-- Link do sweetAlert -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js
+    " defer></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    
+    <!-- Link script externo -->
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container mt-5">
@@ -29,7 +38,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Alert para sucesso -->
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <!-- Header do card -->
@@ -41,6 +50,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Alert caso erro -->
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <!-- Header do card -->
@@ -52,6 +62,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Exibir aviso -->
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <!-- Header do card -->
@@ -59,10 +70,11 @@
                     <!-- Corpo do card -->
                     <div class="card-body text-center">
                         <!-- Button com classe de botao do bootstrap e Classe que define cores -->
-                        <button id="alertBasico" class="btn btn-warning">Exibir Aviso</button>
+                        <button id="alertAviso" class="btn btn-warning">Exibir Aviso</button>
                     </div>
                 </div>
             </div>
+            <!-- Alert que exibe alguma informação -->
             <div class="col-md-4 mb-3"><!-- Header do card -->
                 <div class="card">
                     <!-- Header do card -->
@@ -74,6 +86,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Botao de alert para confirmação -->
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <!-- Header do card -->
@@ -85,6 +98,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Botao para exibir alert com Input -->
             <div class="col-md-4 mb-3"><!-- Header do card -->
                 <div class="card">
                     <!-- Header do card -->
@@ -96,6 +110,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Botao para alert com TImer -->
             <div class="col-md-4 mb-3"><!-- Header do card -->
                 <div class="card">
                     <!-- Header do card -->
@@ -107,6 +122,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Botao que exibe HTML -->
             <div class="col-md-4 mb-3"><!-- Header do card -->
                 <div class="card">
                     <!-- Header do card -->
